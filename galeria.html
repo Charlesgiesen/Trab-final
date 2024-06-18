@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Praias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Praias</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="gallery">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <div class="slide">
+                    <img src="imagens/praia 1.jpg" alt="Praia 1">
+                    <div class="description">Descrição da Praia 1</div>
+                </div>
+                <div class="slide">
+                    <img src="imagens/praia 2.jpeg" alt="Praia 2">
+                    <div class="description">Descrição da Praia 2</div>
+                </div>
+                <div class="slide">
+                    <img src="imagens/praia 1.jpg" alt="Praia 3">
+                    <div class="description">Descrição da Praia 3</div>
+                </div>
+                <!-- Adicione mais slides conforme necessário -->
+            </div>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Galeria de Praias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
